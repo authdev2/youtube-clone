@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 30px 10px 30px;
+  scroll-behavior: smooth;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-links .settings img {
+  width: 23px;
+}
+
+.left-links .logoyt img {
+  width: 100px;
+}
+
+.input-search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-search .input input {
+  padding: 13px;
+  background-color: #121212;
+  border: 1px solid gray;
+  border-radius: 30px;
+  width: 600px;
+}
+
+.input-search .input input::placeholder {
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.create-video {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #3f3f3f;
+  padding: 5px 25px 5px 25px;
+  border-radius: 25px;
+}
+
+.create-video .simbol img {
+  width: 15px;
+}
+
+.simbol {
+  display: flex;
+  align-items: center;
+}
+
+.btn-create button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.my-channel img {
+  width: 40px;
+  border-radius: 25px;
+}
+
+.main-page-content {
+  display: flex;
+  margin-top: 30px;
+}
+
+.microfone-btn button {
+  background-color: #3d3d3d83;
+  border-radius: 35px;
+  padding: 10px;
+  border: none;
+}
+
+.microfone-btn button:hover {
+  cursor: pointer;
+}
+
+.microfone-btn button img {
+  width: 19px;
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 20px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: gray gray;
+}
+
+
+
+.left-bar h3{
+  color: white;
+  font-size: 15px;
+}
+
+.you-text{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-text img{
+  width: 10px;
+}
+
+.left-bar a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+hr {
+  border: 0.6px solid gray;
+}
+
+.links-favorite {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 80px;
+  gap: 5px;
+}
+
+.right-bar .links-favorite a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #272727;
+  padding: 3px 15px 3px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.info-video {
+  display: flex;
+  gap: 10px;
+}
+
+.descriptions-video {
+  color: white;
+}
+
+.img-image img {
+  border-radius: 10px;
+  width: 500px;
+}
+
+.title-video h4 {
+  max-width: 470px;
+  font-size: 15px;
+}
+
+.name-owner p {
+  font-size: 13px;
+  margin-top: 5px;
+  color: gray;
+}
+
+.views span {
+  font-size: 13px;
+  color: gray;
+}
+
+.img-owner img {
+  border-radius: 35px;
+  width: 40px;
+}
+
+.left-bar a {
+  display: flex;
+  gap: 15px;
+}
+
+.box-videos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-bar a img {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.info-subscription{
+  display: flex;
+  gap: 20px;
+}
+
+.img-content img{
+  width: 25px;
+  border-radius: 35px;
+}
+
+.name-content span{
+  color: white;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1600px) {
+  .videos {
+    display: grid;
+    gap: 5px;
+}
+
+.img-image img{
+  width: 300px;
+}
+
+.title-video h4 {
+    max-width: 300px;
+    font-size: 13px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.img-image img{
+  width: 300px;
+}
+
+.title-video h4 {
+    max-width: 300px;
+    font-size: 13px;
+}
+
+.input-search .input input{
+  width: 200px;
+}
+
+.left-bar{
+  display: none;
+  width: 200px;
+}
+}
+
+@media screen and (max-width: 990px) {
+    .videos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.img-image img{
+  width: 500px;
+}
+
+
+
+@media screen and (max-width: 690px) {
+  .left-links{
+    display: flex;
+    gap: 5px;
+  }
+
+  .input-search{
+    margin-right: 20px;
+  }
+
+  .input-search .input input{
+  width: 100px;
+}
+}
+
+
+}
